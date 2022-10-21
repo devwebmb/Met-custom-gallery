@@ -1,0 +1,29 @@
+.form-container {
+  background-color: beige;
+  max-width: 900px;
+  margin: auto;
+  width: 95%;
+  border-radius: 20px;
+  padding: 5% 5% 3% 5%;
+
+}
+
+.form-container p, span, label {
+  font-weight: bold;
+  font-size: calc(1rem + 0.6vw);
+}
+
+.form-container p {
+    margin-bottom: 3%;
+}
+
+label, input {
+    display: block;
+    margin: 1%;
+}
+
+.form-container input[type=checkbox] {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-bottom: 2%;
+}
