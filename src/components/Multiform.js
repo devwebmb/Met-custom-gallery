@@ -2,16 +2,14 @@ import React, { useState } from "react";
 import "./multiform.css";
 import BeginCard from "./infos/BeginCard";
 import DepartementForm from "./forms/DepartementForm";
-import MediumTypeForm from "./forms/PeriodForm";
+import PeriodForm from "./forms/PeriodForm";
+import Loveform from "./forms/Loveform";
 import EndCard from "./infos/EndCard";
 import Gallery from "./gallery/Gallery";
 
 export default function Multiform() {
   const [formIndex, setFormIndex] = useState(1);
-  const [allFormsData, setAllFormsData] = useState({
-    departmentsId: [],
-    period: [],
-  });
+  const [allFormsData, setAllFormsData] = useState({});
 
   const modifyIndex = (index, data) => {
     setFormIndex(index);
@@ -24,8 +22,6 @@ export default function Multiform() {
     }
   };
 
-  console.log(allFormsData);
-
   return (
     <div>
       {formIndex === 1 ? (
@@ -33,10 +29,12 @@ export default function Multiform() {
       ) : formIndex === 2 ? (
         <DepartementForm modifyIndex={modifyIndex} />
       ) : formIndex === 3 ? (
-        <MediumTypeForm modifyIndex={modifyIndex} />
+        <PeriodForm modifyIndex={modifyIndex} />
       ) : formIndex === 4 ? (
+        <Loveform modifyIndex={modifyIndex} />
+      ) : formIndex === 5 ? (
         <EndCard modifyIndex={modifyIndex} />
-      ) : formIndex ===  5 ? (
+      ) : formIndex === 6 ? (
         <Gallery data={allFormsData} />
       ) : (
         ""

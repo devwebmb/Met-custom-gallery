@@ -9,7 +9,7 @@ export default function EndCard(props) {
       </p>
       <button
         onClick={() => {
-          props.modifyIndex(5);
+          props.modifyIndex(6);
         }}
       >
         VOIR LA GALLERIE

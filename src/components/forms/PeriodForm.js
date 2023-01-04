@@ -32,7 +32,7 @@ export default function MediumTypeForm(props) {
     <form className="form-container" onSubmit={preventFunc}>
       <p>
         Quels sont les périodes durant lesquelles vous souhaitez voir des
-        oeuvres ? (plusieurs choix sont possibles)
+        &oelig;uvres ? (plusieurs choix sont possibles)
       </p>
       <label htmlFor="21Century">21ème siècle</label>
       <input
